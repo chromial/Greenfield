@@ -3,14 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-<!--  <parent> -->
-<!--     <groupId>com.mycompany.app</groupId> -->
-<!--     <artifactId>topapp</artifactId> -->
-<!--     <version>1.0-SNAPSHOT</version> -->
-<!--   </parent> -->
-  <groupId>com.mycompany.app</groupId>
   <artifactId>my-webapp</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
     <dependency>
@@ -36,4 +29,14 @@
     </plugin>
     <finalName>my-webapp</finalName>
   </build>
+  <modules>
+  	<module>myapp</module>
+  	<module>mywebapp</module>
+  </modules>
+  <parent>
+  	<groupId>com.mycompany.app</groupId>
+  	<artifactId>app</artifactId>
+  	<version>1.0-SNAPSHOT</version>
+  	<relativePath>C:/arginine/app</relativePath>
+  </parent>
 </project>
