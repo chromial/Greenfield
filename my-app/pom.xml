@@ -7,11 +7,6 @@
   <packaging>jar</packaging>
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>
-<!--   <parent> -->
-<!--     <groupId>com.mycompany.app</groupId> -->
-<!--     <artifactId>topapp</artifactId> -->
-<!--     <version>1.0-SNAPSHOT</version> -->
-<!--   </parent> -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -28,6 +23,6 @@
   	<groupId>com.mycompany.app</groupId>
   	<artifactId>app</artifactId>
   	<version>1.0-SNAPSHOT</version>
-  	<relativePath>C:/arginine/app</relativePath>
+  	<relativePath>../app/pom.xml</relativePath>
   </parent>
 </project>
