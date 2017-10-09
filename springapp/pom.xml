@@ -169,12 +169,12 @@
       <artifactId>picketbox-commons</artifactId>
       <version>1.0.0.final-redhat-3</version>
     </dependency>
-    <dependency>
+<!--     <dependency>
       <groupId>org.picketbox</groupId>
       <artifactId>picketbox-infinispan</artifactId>
       <version>4.1.1.Final-redhat-1</version>
     </dependency>
-    <dependency>
+ -->    <dependency>
       <groupId>org.jboss.as</groupId>
       <artifactId>jboss-as-controller-client</artifactId>
       <version>7.5.0.Final-redhat-21</version>
