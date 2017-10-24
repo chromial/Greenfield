@@ -11,11 +11,6 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<maven.compiler.source>1.6</maven.compiler.source>
 	</properties>
-	<dependencyManagement>
-		<dependencies>
-		</dependencies>
-	</dependencyManagement>
-	<dependencies>          
 	<!-- Import the CDI API -->
 		<dependency>
 			<groupId>javax.enterprise</groupId>
@@ -38,13 +33,15 @@
 			<version>1.0.1.Final-redhat-3</version>
 		</dependency>
 	</dependencies>
-	<build>         <!-- Set the name of the war, used as the context root when the app is deployed -->
+	<build>         
+	<!-- Set the name of the war, used as the context root when the app is deployed -->
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
-				<configuration>                <!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
+				<configuration>                
+	<!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
