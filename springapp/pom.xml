@@ -2,12 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>springapp</groupId>
   <artifactId>springapp</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>war</packaging>
     <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
   <dependencies>
     <dependency>
       <groupId>javax.activation</groupId>
@@ -217,7 +218,7 @@
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
-    <version>4.3.11.RELEASE</version>
+    <version>3.2.18.RELEASE</version>
 </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -226,6 +227,7 @@
     </dependency>
   </dependencies>
   <build>
+   <finalName>${project.artifactId}</finalName>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test/springapp/web</testSourceDirectory>
     <plugins>
