@@ -7,7 +7,9 @@
     <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
   <dependencies>
     <dependency>
       <groupId>javax.activation</groupId>
@@ -169,12 +171,8 @@
       <artifactId>picketbox-commons</artifactId>
       <version>1.0.0.final-redhat-3</version>
     </dependency>
-<!--     <dependency>
-      <groupId>org.picketbox</groupId>
-      <artifactId>picketbox-infinispan</artifactId>
-      <version>4.1.1.Final-redhat-1</version>
-    </dependency>
- -->    <dependency>
+    <dependency>
+
       <groupId>org.jboss.as</groupId>
       <artifactId>jboss-as-controller-client</artifactId>
       <version>7.5.0.Final-redhat-21</version>
@@ -217,7 +215,7 @@
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
-    <version>4.3.11.RELEASE</version>
+    <version>3.2.18.RELEASE</version>
 </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -226,6 +224,9 @@
     </dependency>
   </dependencies>
   <build>
+
+   <finalName>${project.artifactId}</finalName>
+
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test/springapp/web</testSourceDirectory>
     <plugins>
@@ -237,6 +238,6 @@
         </configuration>
       </plugin>
     </plugins>
-    <finalName>springapp</finalName>
+
   </build>
 </project>
