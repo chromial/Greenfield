@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>springapp</groupId>
   <artifactId>springapp</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>war</packaging>
     <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -237,5 +237,6 @@
         </configuration>
       </plugin>
     </plugins>
+    <finalName>springapp</finalName>
   </build>
 </project>
