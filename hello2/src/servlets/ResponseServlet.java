@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2007 Sun Microsystems, Inc.
  * All rights reserved.  You may not modify, use,
@@ -21,10 +22,7 @@ import javax.servlet.http.*;
  * method of the HTTP protocol.
  */
 public class ResponseServlet extends HttpServlet {
-
-	private static final long serialVersionUID = 1L;
-
-	public void doGet(
+    public void doGet(
         HttpServletRequest request,
         HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
@@ -41,3 +39,4 @@ public class ResponseServlet extends HttpServlet {
         return "The Response servlet says hello.";
     }
 }
+
