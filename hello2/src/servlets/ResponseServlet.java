@@ -21,7 +21,10 @@ import javax.servlet.http.*;
  * method of the HTTP protocol.
  */
 public class ResponseServlet extends HttpServlet {
-    public void doGet(
+
+	private static final long serialVersionUID = 1L;
+
+	public void doGet(
         HttpServletRequest request,
         HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
